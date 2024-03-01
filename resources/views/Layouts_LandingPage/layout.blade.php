@@ -305,16 +305,12 @@
             <p
               class="font-normal text-['#0000'] mb-3 text-xs flex justify-between text-justify md:text-base lg:text-[18px] mt-3 lg:mt-3"
             >
-              Tujuan dibentuknya komunitas ini ialah dilandasi dengan keinginan
-              untuk berbagi ilmu bagi masyarakat ekonomi rendah dan masyarakat
-              yang putus sekolah.
+             
             </p>
             <p
               class="font-normal text-['#0000'] mb-3 text-xs flex justify-between text-justify md:text-base lg:text-[18px] mt-3 lg:mt-0"
             >
-              Kami menerima siapapun yang ingin belajar bersama kami dalam
-              mengasah kemampuan softskill dibidang IT hingga siap untuk dunia
-              kerja.
+             
             </p>
           </aside>
           @endif
@@ -725,85 +721,44 @@
               </button>
             </div>
           </div>
-          <div id="sliderArtikel" class="w-9/12 overflow-hidden p-10">
+          <div id="sliderArtikel" class="w-10/12 overflow-hidden p-10">
+           
             <ul
               id="sliderss"
               class="flex w-full transition-margin duration-700"
             >
+            @foreach ($blog as $dataBlog)
               <li class="w-96 p-5">
+              
                 <div
                   class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
                 >
                   <a href="#">
                     <img
                       class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/artikel_1.svg"
+                      src="{{ asset($dataBlog->gambar_blog) }}"
                       alt=""
                     />
                   </a>
                   <div class="p-1">
                     <a href="#" class="font-normal text-[12px] text-slate-300"
-                      >Azhari Saputra</a
+                      > {{$dataBlog->author_blog}} </a
                     >
                     <a href="#">
                       <h5
                         class="mb-3 mt-3 font-medium text-[20px] text-gray-900 dark:text-white"
                       >
-                        13 Programming Blogs and Websites to Improve Your Coding
-                        Skills!
+                      {{$dataBlog->judul_blog}}
                       </h5>
                     </a>
                     <div class="">
                       <p
                         class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
                       >
-                        Lorem ipsum dolor, sit amet consectetur adipisicmmmm
-                        elit. Necessitatibus a unde aperiam eius libero amet
-                        asperiores voluptas .
+                      {!! $dataBlog->deskripsi_blog !!} .
                       </p>
                       <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Bacaaaaaaa
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/artikel_1.svg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#" class="font-normal text-[12px] text-slate-300"
-                      >Azhari Saputra</a
-                    >
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[20px] text-gray-900 dark:text-white"
-                      >
-                        13 Programming Blogs and Websites to Improve Your Coding
-                        Skills!
-                      </h5>
-                    </a>
-                    <div class="">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Necessitatibus a unde aperiam eius libero amet
-                        asperiores voluptas .
-                      </p>
-                      <a
-                        href="#"
+                        href="{{$dataBlog->link_blog}}"
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                       >
                         Baca
@@ -812,211 +767,7 @@
                   </div>
                 </div>
               </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/artikel_1.svg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#" class="font-normal text-[12px] text-slate-300"
-                      >Azhari Saputra</a
-                    >
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[20px] text-gray-900 dark:text-white"
-                      >
-                        13 Programming Blogs and Websites to Improve Your Coding
-                        Skills!
-                      </h5>
-                    </a>
-                    <div class="">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Necessitatibus a unde aperiam eius libero amet
-                        asperiores voluptas .
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Baca
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/artikel_1.svg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#" class="font-normal text-[12px] text-slate-300"
-                      >Azhari Saputra</a
-                    >
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[20px] text-gray-900 dark:text-white"
-                      >
-                        13 Programming Blogs and Websites to Improve Your Coding
-                        Skills!
-                      </h5>
-                    </a>
-                    <div class="">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Necessitatibus a unde aperiam eius libero amet
-                        asperiores voluptas .
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Baca
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/artikel_1.svg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#" class="font-normal text-[12px] text-slate-300"
-                      >Azhari Saputra</a
-                    >
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[20px] text-gray-900 dark:text-white"
-                      >
-                        13 Programming Blogs and Websites to Improve Your Coding
-                        Skills!
-                      </h5>
-                    </a>
-                    <div class="">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Necessitatibus a unde aperiam eius libero amet
-                        asperiores voluptas .
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Baca
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/artikel_1.svg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#" class="font-normal text-[12px] text-slate-300"
-                      >Azhari Saputra</a
-                    >
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[20px] text-gray-900 dark:text-white"
-                      >
-                        13 Programming Blogs and Websites to Improve Your Coding
-                        Skills!
-                      </h5>
-                    </a>
-                    <div class="">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Necessitatibus a unde aperiam eius libero amet
-                        asperiores voluptas .
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Baca
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/artikel_1.svg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#" class="font-normal text-[12px] text-slate-300"
-                      >Azhari Saputra</a
-                    >
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[20px] text-gray-900 dark:text-white"
-                      >
-                        13 Programming Blogs and Websites to Improve Your Coding
-                        Skills!
-                      </h5>
-                    </a>
-                    <div class="">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Necessitatibus a unde aperiam eius libero amet
-                        asperiores voluptas .
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Baca
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
+            @endforeach
             </ul>
           </div>
           <div class="w-2/12 flex items-center">

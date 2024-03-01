@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HeroController;
 use App\Http\Controllers\Admin\KelaskafekodingController;
@@ -40,5 +41,7 @@ Route::resources([
     'tentangkami' => TentangkamiController::class,
     'showcase' => ShowcaseController::class,
     'kelaskafekoding' => KelaskafekodingController::class,
+    'blog' => BlogController::class,
+
 
 ]);
