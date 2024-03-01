@@ -604,7 +604,7 @@
     <!-- end showcase -->
     <!-- Kelas Kafekoding -->
     <section>
-      <div class="lg:bg-[url('./Assets/Image/bg-kelas.svg')] bg-no-repeat"> 
+      <div class="lg:bg-[url('./Assets/Image/bg-kelas.svg ')] bg-no-repeat"> 
         <div class="container" data-aos="zoom-in"  data-aos-duration="2000">
           <h1
             class="text-center text-[20px] font-semibold text-main pt-20 lg:pt-0"
@@ -615,6 +615,7 @@
           <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="swiper-container !overflow-hidden">
               <div class="swiper-wrapper">
+                @foreach ($kelas as $dataKelas)
                 <div class="swiper-slide">
                   <div class="">
                     <div
@@ -628,7 +629,7 @@
                         >
                           <img
                             class="rounded-t-lg mx-auto mt-8 w-[150px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_database.svg"
+                            src="{{ asset($dataKelas->gambar_kelaskafekoding) }}"
                             alt=""
                           />
                         </a>
@@ -636,526 +637,46 @@
                           <span class="flex justify-center self-center"
                             ><img
                               class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
+                              src="{{asset('Assets_LandingPage/./Assets/Image/icon_kelasKafekoding_jam.svg')}}"
                               alt=""
                             />
                             <p class="ml-2 font-normal text-[10px]">
-                              08.00-10.00 WIB
+                              {{$dataKelas->jam_awal_kelaskafekoding}} - {{$dataKelas->jam_akhir_kelaskafekoding}} WIB
                             </p></span
                           >
                           <span class="flex justify-center self-center"
                             ><img
                               class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
+                              src="{{asset('Assets_LandingPage/./Assets/Image/icon_kelasKafekoding_lokasi.svg')}}"
                               alt=""
                             />
                             <p class="ml-2 font-normal text-[10px]">
-                              Labor 103
+                              Labor {{$dataKelas->ruangan_kelaskafekoding}} 
                             </p></span
                           >
                         </div>
                         <div class="p-6">
                           <h5 class="text-gray-900 text-xl font-medium mb-2">
                             Kelas : <br />
-                            Database (MySQL)
+                            {{$dataKelas->kelas_kelaskafekoding}} 
                           </h5>
                         </div>
                         <div
                           class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
                         >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
+                        <div class="absolute flex -space-x-12 mb-36">
+                          <a href=" {{$dataKelas->kelas_kelaskafekoding}} " class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150">
+                            Gabung Sekarang
+                          </a>
+                        </div>
+                        
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="">
-                    <div
-                      class="relative w-[270px] group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-[20px]"
-                    >
-                      <div class="pb-6">
-                        <a
-                          href="#!"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          <img
-                            class="rounded-t-lg mx-auto mt-8 w-[180px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_html.png"
-                            alt=""
-                          />
-                        </a>
-                        <div class="flex justify-between p-5">
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              08.00-10.00 WIB
-                            </p></span
-                          >
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              Labor 101
-                            </p></span
-                          >
-                        </div>
-                        <div class="p-6">
-                          <h5 class="text-gray-900 text-xl font-medium mb-2">
-                            Kelas : <br />
-                            HTML & CSS Dasar
-                          </h5>
-                        </div>
-                        <div
-                          class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
-                        >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="">
-                    <div
-                      class="relative w-[270px] group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-[20px]"
-                    >
-                      <div class="pb-6">
-                        <a
-                          href="#!"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          <img
-                            class="rounded-t-lg mx-auto mt-8 w-[200px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_Desain.png"
-                            alt=""
-                          />
-                        </a>
-                        <div class="flex justify-between p-5">
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              10.00-12.00 WIB
-                            </p></span
-                          >
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              Labor 102
-                            </p></span
-                          >
-                        </div>
-                        <div class="p-6">
-                          <h5 class="text-gray-900 text-xl font-medium mb-2">
-                            Kelas : <br />
-                            Desain Grafis
-                          </h5>
-                        </div>
-                        <div
-                          class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
-                        >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="">
-                    <div
-                      class="relative w-[270px] group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-[20px]"
-                    >
-                      <div class="pb-6">
-                        <a
-                          href="#!"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          <img
-                            class="rounded-t-lg mx-auto mt-8 w-[180px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_js.png"
-                            alt=""
-                          />
-                        </a>
-                        <div class="flex justify-between p-5">
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              10.00-12.00 WIB
-                            </p></span
-                          >
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              Labor 103
-                            </p></span
-                          >
-                        </div>
-                        <div class="p-6">
-                          <h5 class="text-gray-900 text-xl font-medium mb-2">
-                            Kelas : <br />
-                            Javascript
-                          </h5>
-                        </div>
-                        <div
-                          class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
-                        >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="">
-                    <div
-                      class="relative w-[270px] group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-[20px]"
-                    >
-                      <div class="pb-6">
-                        <a
-                          href="#!"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          <img
-                            class="rounded-t-lg mx-auto mt-8 w-[180px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_php.png"
-                            alt=""
-                          />
-                        </a>
-                        <div class="flex justify-between p-5">
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              10.00-12.00 WIB
-                            </p></span
-                          >
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              Labor 101
-                            </p></span
-                          >
-                        </div>
-                        <div class="p-6">
-                          <h5 class="text-gray-900 text-xl font-medium mb-2">
-                            Kelas : <br />
-                            PHP Dasar
-                          </h5>
-                        </div>
-                        <div
-                          class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
-                        >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="">
-                    <div
-                      class="relative w-[270px] group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-[20px]"
-                    >
-                      <div class="pb-6">
-                        <a
-                          href="#!"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          <img
-                            class="rounded-t-lg mx-auto mt-8 w-[180px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_android.png"
-                            alt=""
-                          />
-                        </a>
-                        <div class="flex justify-between p-5">
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              13.00-15.00 WIB
-                            </p></span
-                          >
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              Labor 101
-                            </p></span
-                          >
-                        </div>
-                        <div class="p-6">
-                          <h5 class="text-gray-900 text-xl font-medium mb-2">
-                            Kelas : <br />
-                            Android (Kotlin)
-                          </h5>
-                        </div>
-                        <div
-                          class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
-                        >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="">
-                    <div
-                      class="relative w-[270px] group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-[20px]"
-                    >
-                      <div class="pb-6">
-                        <a
-                          href="#!"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          <img
-                            class="rounded-t-lg mx-auto mt-8 w-[180px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_UIUX.png"
-                            alt=""
-                          />
-                        </a>
-                        <div class="flex justify-between p-5">
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              13.00-15.00 WIB
-                            </p></span
-                          >
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              Labor 102
-                            </p></span
-                          >
-                        </div>
-                        <div class="p-6">
-                          <h5 class="text-gray-900 text-xl font-medium mb-2">
-                            Kelas : <br />
-                            UI/UX
-                          </h5>
-                        </div>
-                        <div
-                          class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
-                        >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="">
-                    <div
-                      class="relative w-[270px] group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-[20px]"
-                    >
-                      <div class="pb-6">
-                        <a
-                          href="#!"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          <img
-                            class="rounded-t-lg mx-auto mt-8 w-[180px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_python.png"
-                            alt=""
-                          />
-                        </a>
-                        <div class="flex justify-between p-5">
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              13.00-15.00 WIB
-                            </p></span
-                          >
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              Labor 103
-                            </p></span
-                          >
-                        </div>
-                        <div class="p-6">
-                          <h5 class="text-gray-900 text-xl font-medium mb-2">
-                            Kelas : <br />
-                            Ptyhon
-                          </h5>
-                        </div>
-                        <div
-                          class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
-                        >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="">
-                    <div
-                      class="relative w-[270px] group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-[20px]"
-                    >
-                      <div class="pb-6">
-                        <a
-                          href="#!"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          <img
-                            class="rounded-t-lg mx-auto mt-8 w-[180px] h-[120px]"
-                            src="./Assets/Image/kelasKafekoding_laravel.svg"
-                            alt=""
-                          />
-                        </a>
-                        <div class="flex justify-between p-5">
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_jam.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              13.00-15.00 WIB
-                            </p></span
-                          >
-                          <span class="flex justify-center self-center"
-                            ><img
-                              class="w-4"
-                              src="./Assets/Image/icon_kelasKafekoding_lokasi.svg"
-                              alt=""
-                            />
-                            <p class="ml-2 font-normal text-[10px]">
-                              Labor 104
-                            </p></span
-                          >
-                        </div>
-                        <div class="p-6">
-                          <h5 class="text-gray-900 text-xl font-medium mb-2">
-                            Kelas : <br />
-                            Laravel
-                          </h5>
-                        </div>
-                        <div
-                          class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl"
-                        >
-                          <div class="absolute flex -space-x-12 mb-36">
-                            <button
-                              class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[65px] lg:px-[60px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150"
-                            >
-                              Gabung Sekarang
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
+                @endforeach
+                
                
               </div>
               
