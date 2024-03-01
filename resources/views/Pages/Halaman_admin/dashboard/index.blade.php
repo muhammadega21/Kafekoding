@@ -28,7 +28,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Data Kategori
+              Data Hero
             </p>
             <p
               class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -51,7 +51,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Data Gender
+              Data Tentang Kami
             </p>
             <p
               class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -75,7 +75,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Data Model
+              Data Platform
             </p>
             <p
               class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -99,7 +99,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-             Data Busana
+             Data Showcase
             </p>
             <p
               class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -122,7 +122,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Data Bahan
+              Data Kelas
             </p>
             <p
               class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -145,7 +145,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Data Ukuran
+              Data Blog
             </p>
             <p
               class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -168,7 +168,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Data Jenis
+              Data Promosi
             </p>
             <p
               class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -192,7 +192,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Data Barang
+              Data Pertanyaan
             </p>
             <p
               class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -201,99 +201,7 @@
             </p>
           </div>
         </div>
-        <div
-          class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-        >
-          <div
-            class="p-3 mr-4 text-teal-500 bg-teal-100 rounded-full dark:text-teal-100 dark:bg-teal-500"
-          >
-          <svg class="w-6 h-6 dark:bg-teal-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 18">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 1v11m0 0 4-4m-4 4L4 8m11 4v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3"/>
-          </svg>
-          </div>
-          <div>
-            <p
-              class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-            >
-              Data Barang Masuk
-            </p>
-            <p
-              class="text-lg font-semibold text-gray-700 dark:text-gray-200"
-            >
-            {{-- {{ $barang_masuk }} --}}
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-        >
-          <div
-            class="p-3 mr-4 text-violet-500 bg-violet-100 rounded-full dark:text-violet-100 dark:bg-violet-500"
-          >
-          <svg class="w-6 h-6 dark:bg-violet-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12V1m0 0L4 5m4-4 4 4m3 5v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3"/>
-          </svg>
-          </div>
-          <div>
-            <p
-              class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-            >
-              Data Barang Keluar
-            </p>
-            <p
-              class="text-lg font-semibold text-gray-700 dark:text-gray-200"
-            >
-            {{-- {{ $barang_keluar }} --}}
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-        >
-          <div
-            class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500"
-          >
-          <svg class="w-6 h-6 dark:bg-orange-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 19">
-            <path d="M7.324 9.917A2.479 2.479 0 0 1 7.99 7.7l.71-.71a2.484 2.484 0 0 1 2.222-.688 4.538 4.538 0 1 0-3.6 3.615h.002ZM7.99 18.3a2.5 2.5 0 0 1-.6-2.564A2.5 2.5 0 0 1 6 13.5v-1c.005-.544.19-1.072.526-1.5H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h7.687l-.697-.7ZM19.5 12h-1.12a4.441 4.441 0 0 0-.579-1.387l.8-.795a.5.5 0 0 0 0-.707l-.707-.707a.5.5 0 0 0-.707 0l-.795.8A4.443 4.443 0 0 0 15 8.62V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.12c-.492.113-.96.309-1.387.579l-.795-.795a.5.5 0 0 0-.707 0l-.707.707a.5.5 0 0 0 0 .707l.8.8c-.272.424-.47.891-.584 1.382H8.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1.12c.113.492.309.96.579 1.387l-.795.795a.5.5 0 0 0 0 .707l.707.707a.5.5 0 0 0 .707 0l.8-.8c.424.272.892.47 1.382.584v1.12a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1.12c.492-.113.96-.309 1.387-.579l.795.8a.5.5 0 0 0 .707 0l.707-.707a.5.5 0 0 0 0-.707l-.8-.795c.273-.427.47-.898.584-1.392h1.12a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5ZM14 15.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
-          </svg>
-          </div>
-          <div>
-            <p
-              class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-            >
-              Data Admin
-            </p>
-            <p
-              class="text-lg font-semibold text-gray-700 dark:text-gray-200"
-            >
-            {{-- {{ $admin }} --}}
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-        >
-          <div
-            class="p-3 mr-4 text-indigo-500 bg-indigo-100 rounded-full dark:text-indigo-100 dark:bg-indigo-500"
-          >
-          <svg class="w-6 h-6 dark:bg-indigo-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M7.824 5.937a1 1 0 0 0 .726-.312 2.042 2.042 0 0 1 2.835-.065 1 1 0 0 0 1.388-1.441 3.994 3.994 0 0 0-5.674.13 1 1 0 0 0 .725 1.688Z"/>
-            <path d="M17 7A7 7 0 1 0 3 7a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1V7a5 5 0 1 1 10 0v7.083A2.92 2.92 0 0 1 12.083 17H12a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1a1.993 1.993 0 0 0 1.722-1h.361a4.92 4.92 0 0 0 4.824-4H17a3 3 0 0 0 3-3v-2a3 3 0 0 0-3-3Z"/>
-          </svg>
-          </div>
-          <div>
-            <p
-              class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-            >
-              Data Ekspedisi
-            </p>
-            <p
-              class="text-lg font-semibold text-gray-700 dark:text-gray-200"
-            >
-            {{-- {{ $ekspedisi }} --}}
-            </p>
-          </div>
-        </div>
+       
       </div>
 
     
