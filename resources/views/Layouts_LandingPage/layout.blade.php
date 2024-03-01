@@ -261,33 +261,34 @@
           Tentang Kami
         </h1>
         <div class="px-10 flex flex-wrap">
+          @if ($tentangkamiCount > 0)
           <aside class="w-full self-end lg:px-5 my-3 lg:w-1/2">
             <div class="mt-9">
               <div class="grid grid-cols-2 gap-2">
                 <div>
                   <img
-                    src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_1.jpeg')}}"
+                    src="{{ asset($tentangkami->gambar1_tentangkami) }}"
                     alt=""
                     class="rounded-xl "
                   />
                 </div>
                 <div>
                   <img
-                    src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_2.jpg')}} "
+                    src="{{ asset($tentangkami->gambar2_tentangkami) }} "
                     alt="vvv"
                     class="rounded-xl"
                   />
                 </div>
                 <div>
                   <img
-                    src=" {{asset('Assets_LandingPage/./Assets/Image/tentang_kami_3.jpg')}}"
+                    src=" {{ asset($tentangkami->gambar3_tentangkami) }}"
                     alt=""
                     class="rounded-xl"
                   />
                 </div>
                 <div>
                   <img
-                    src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_4.jpg')}}"
+                    src="{{ asset($tentangkami->gambar4_tentangkami) }}"
                     alt=""
                     class="rounded-xl"
                   />
@@ -299,8 +300,7 @@
             <p
               class="font-normal text-['#0000'] mb-3 text-xs flex justify-between md:text-base lg:text-[18px] mt-1 text-justify mt-3 lg:mt-2"
             >
-              Kafe koding merupakan sebuah komunitas belajar yang bergerak
-              dibidang IT, berdiri pada tanggal 1 Agustus 2013.
+            {!! $tentangkami->deskripsi_tentangkami !!}
             </p>
             <p
               class="font-normal text-['#0000'] mb-3 text-xs flex justify-between text-justify md:text-base lg:text-[18px] mt-3 lg:mt-3"
@@ -317,6 +317,7 @@
               kerja.
             </p>
           </aside>
+          @endif
         </div>
       </div>
     </section>

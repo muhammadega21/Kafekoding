@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HeroController;
+use App\Http\Controllers\Admin\TentangkamiController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LandingPage\LandingPageController;
 use Illuminate\Support\Facades\Route;
@@ -34,5 +35,6 @@ Route::controller(AuthController::class)->group(function () {
 Route::resources([
     'dashboard' => DashboardController::class,
     'hero' => HeroController::class,
+    'tentangkami' => TentangkamiController::class,
 
 ]);
