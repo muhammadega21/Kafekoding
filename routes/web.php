@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HeroController;
+use App\Http\Controllers\Admin\ShowcaseController;
 use App\Http\Controllers\Admin\TentangkamiController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LandingPage\LandingPageController;
@@ -36,5 +37,6 @@ Route::resources([
     'dashboard' => DashboardController::class,
     'hero' => HeroController::class,
     'tentangkami' => TentangkamiController::class,
+    'showcase' => ShowcaseController::class,
 
 ]);

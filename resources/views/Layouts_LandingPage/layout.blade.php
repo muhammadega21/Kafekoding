@@ -535,35 +535,33 @@
             </div>
           </div>
           <div id="sliderContainer" class="w-10/12 overflow-hidden p-10">
+            @foreach ($showcase as $dataShowcase)
             <ul id="slider" class="flex w-full transition-margin duration-700">
+            
               <li class="w-96 p-5">
                 <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="{{asset('Assets_LandingPage/./Assets/Image/showcase_1.png')}}"
-                      alt=""
-                    />
-                  </a>
+                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full ">
+                <a href="#" class="relative inline-block ">
+                  
+                  <img class="w-50 h-50 object-cover rounded-lg" src="{{ asset($dataShowcase->gambar_showcase) }}" alt="">
+                </a>
+                
                   <div class="p-1">
                     <a href="#">
                       <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
+                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 whitespace-normal break-all  dark:text-white"
                       >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
+                      {!! $dataShowcase->deskripsi_showcase !!}
                       </h5>
                     </a>
                     <div class="flex justify-between">
                       <p
                         class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
                       >
-                        UI/UX Design
+                      {!! $dataShowcase->bidang_showcase !!}
                       </p>
                       <a
-                        href="#"
+                        href="{{ $dataShowcase->link_showcase }}"
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                       >
                         Lihat
@@ -572,366 +570,9 @@
                   </div>
                 </div>
               </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_1.jpeg')}}"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_1.jpeg')}}"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_1.jpeg')}}"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_1.jpeg')}}"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_1.jpeg')}}"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="{{asset('Assets_LandingPage/./Assets/Image/tentang_kami_1.jpeg')}}"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/showcase_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/showcase_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/showcase_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="w-96 p-5">
-                <div
-                  class="bg-white border border-gray-200 p-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="h-50 w-full object-cover rounded-lg"
-                      src="./Assets/Image/showcase_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-1">
-                    <a href="#">
-                      <h5
-                        class="mb-3 mt-3 font-medium text-[13px] text-gray-900 dark:text-white"
-                      >
-                        Research Aplikasi Line dengan case study bagaimana cara
-                        meningkatkan User
-                      </h5>
-                    </a>
-                    <div class="flex justify-between">
-                      <p
-                        class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
-                      >
-                        UI/UX Design
-                      </p>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                      >
-                        Lihat
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
+              @endforeach
+          
+             
             </ul>
           </div>
           <div class="w-2/12 flex items-center">
