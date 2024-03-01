@@ -1,13 +1,13 @@
 @extends('Layouts_Admin.layout')
 
 @section('content')
-    <!-- Start Content hero -->
+    <!-- Start Content showcase -->
 
 
     <main class="h-full pb-16 overflow-y-auto">
         <div class="container grid px-6 mx-auto">
             <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-                Kelola Data hero
+                Kelola Data showcase
             </h2>
 
 
@@ -27,8 +27,8 @@
                     </li>
                     <li class="text-sm">
                         <a class="flex items-center text-gray-500 hover:text-blue-600"
-                            href="{{ route('hero.index') }}">
-                            Kelola Data hero
+                            href="{{ route('showcase.index') }}">
+                            Kelola Data showcase
                             <svg class="flex-shrink-0 mx-3 overflow-visible h-2.5 w-2.5 text-gray-400 dark:text-gray-600"
                                 width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@
                     </li>
 
                     <li class="text-sm font-semibold text-gray-800 truncate dark:text-gray-200" aria-current="page">
-                        Edit Data hero
+                        Tambah Data showcase
                     </li>
                 </ol>
 
@@ -55,54 +55,42 @@
 
         <!-- component -->
         <section class="max-w-[990px] p-6 mx-auto bg-slate-100 rounded-md shadow-md dark:bg-gray-800 mt-10">
-            <h1 class="text-xl font-bold text-slate-900 capitalize dark:text-slate-900">Edit Data hero</h1>
-            <form action="{{ route('hero.update', $dataById->id_hero) }}" method="post"
-                enctype="multipart/form-data">
+            <h1 class="text-xl font-bold text-slate-900 capitalize dark:text-slate-900">Tambah Data showcase</h1>
+            @if (session('success'))
+                <div class="alert alert-success p-3">{{ session('success') }}</div>
+            @endif
+            @if (session('error'))
+                <div class="alert alert-success p-3">{{ session('error') }}</div>
+            @endif
+            <form action="{{ route('showcase.store') }}" method="post" enctype="multipart/form-data">
                 <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
                     @csrf
-                    @method('PUT')
-                    <div class="w-72">
-                        <div class="relative h-10 w-full min-w-[350px] mt-5">
-                            <label class="block text-sm">
-                                <span class="block text-sm font-medium text-slate-900">Judul</span>
-                                <input
-                                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-[#203e59] focus:outline-none focus:shadow-outline-[#203e59] dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                  placeholder="Judul" name="judul_hero" value="{{ $dataById->judul_hero }}" 
-                                />
-                              </label>
-                        </div>
-                    </div>
-                    <div class="w-72">
-                        <div class="relative h-10 w-full min-w-[350px] mt-5">
-                            <div class="col-lg-2">
-                                <label for="status_hero">Status</label>
-                            </div>
-                            <div class="col-lg-9 ">
-                                <select name="status_hero" id="status_hero"
-                                class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-[#203e59] focus:outline-none focus:shadow-outline-[#203e59] dark:focus:shadow-outline-gray" @error('status_hero') is-invalid bg-danger @enderror>
-                                    <option value="">pilih jenis status</option>
-                                    <option value="aktif" @selected($dataById->status_hero === 'aktif')>Aktif</option>
-                                    <option value="tidak" @selected($dataById->status_hero === 'tidak')>Tidak</option>
-                                </select>
-    
-                                @error('status_hero')
-                                    <div class="invalid-feedback">
-                                        <i class="text-danger">{{ $message }}</i>
-                                    </div>
-                                @enderror
-                            </div>
-                        </div>
-                    </div>
+                   
                     
                     <div class="w-72">
                         <div class="relative h-[120px] w-full min-w-[350px] mt-5">
                             <label class="block mt-4 text-sm">
                                 <span class="block text-sm font-medium text-slate-900">Deskripsi</span>
-                                <textarea class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-[#203e59] focus:outline-none focus:shadow-outline-[#203e59] dark:focus:shadow-outline-gray" rows="3" placeholder="Deskripsi" name="deskripsi_hero">{{ $dataById->deskripsi_hero }}</textarea>
-                            </label>
+                                <textarea
+                                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-[#203e59] focus:outline-none focus:shadow-outline-[#203e59] dark:focus:shadow-outline-gray"
+                                  rows="3"
+                                  placeholder="Deskripsi" name="deskripsi_showcase"
+                                ></textarea>
+                              </label>
                         </div>
                     </div>
-                    
+                    <div class="w-72">
+                        <div class="relative h-[120px] w-full min-w-[350px] mt-5">
+                            <label class="block mt-4 text-sm">
+                                <span class="block text-sm font-medium text-slate-900">Bidang</span>
+                                <textarea
+                                  class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-[#203e59] focus:outline-none focus:shadow-outline-[#203e59] dark:focus:shadow-outline-gray"
+                                  rows="3"
+                                  placeholder="Bidang" name="bidang_showcase"
+                                ></textarea>
+                              </label>
+                        </div>
+                    </div>
                     <div class="w-72">
                         <div class="relative h-[120px] w-full min-w-[350px] mt-5">
                             <label class="block mt-4 text-sm">
@@ -110,12 +98,13 @@
                                 <textarea
                                   class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-[#203e59] focus:outline-none focus:shadow-outline-[#203e59] dark:focus:shadow-outline-gray"
                                   rows="3"
-                                  placeholder="Link" name="link_hero" value="{{ $dataById->link_hero }}" 
-                                >{{ $dataById->link_hero }}</textarea>
+                                  placeholder="Link" name="link_showcase"
+                                ></textarea>
                               </label>
                         </div>
                     </div>
-                    <div class="w-[350px] pb-10">
+                   <div class="w-[350px] pb-10" >
+                    <div class="">
                         <label class="block text-sm font-medium text-slate-900">
                             Gambar
                         </label>
@@ -132,9 +121,7 @@
                                     <label for="file-upload"
                                         class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
                                         <span class="">Upload a file</span>
-                                        <img src="{{ asset($dataById->gambar_hero) }}
-                                        " alt="" class="w-48">
-                                        <input id="file-upload" name="gambar_hero" type="file" class="sr-only">
+                                        <input id="file-upload" name="gambar_showcase" type="file" class="sr-only">
                                     </label>
 
                                 </div>
@@ -142,16 +129,20 @@
                             </div>
                         </div>
                     </div>
+                   </div>
 
                 </div>
 
                 <div class="flex justify-end mt-6">
                     <button
-                        class="px-6 py-2 leading-5 text-slate-900 transition-colors duration-200 transform bg-[#203e59] rounded-md hover:bg-indigo-700 focus:outline-none focus:bg-gray-600 text-white"
+                        class="px-6 py-2 leading-5 text-slate-900 transition-colors duration-200 transform rounded-md hover:bg-[#203e59] focus:outline-none focus:bg-gray-600 text-white bg-[#203e59] "
                         type="submit" value="Simpan">Simpan</button>
                 </div>
             </form>
         </section>
+
+
+
     </main>
 
     <!-- End Content Barang -->
