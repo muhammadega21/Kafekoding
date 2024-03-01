@@ -16,10 +16,13 @@ class LandingPageController extends Controller
         $data['heroCount'] = DB::table('tb_hero')->where('status_hero', 'aktif')->count();
         $data['tentangkamiCount'] = DB::table('tb_tentangkami')->where('status_tentangkami', 'aktif')->count();
         $data['showcaseCount'] = DB::table('tb_showcase')->count();
+        $data['kelasCount'] = DB::table('tb_kelaskafekoding')->count();
 
-        $data['showcase'] = DB::table('tb_showcase')->get();
+
         $data['hero'] = DB::table('tb_hero')->where('status_hero', 'aktif')->first();
         $data['tentangkami'] = DB::table('tb_tentangkami')->where('status_tentangkami', 'aktif')->first();
+        $data['showcase'] = DB::table('tb_showcase')->get();
+        $data['kelas'] = DB::table('tb_kelaskafekoding')->get();
 
         // dd($data['hero']);
         return view('Layouts_LandingPage.layout', $data);

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HeroController;
+use App\Http\Controllers\Admin\KelaskafekodingController;
 use App\Http\Controllers\Admin\ShowcaseController;
 use App\Http\Controllers\Admin\TentangkamiController;
 use App\Http\Controllers\AuthController;
@@ -38,5 +39,6 @@ Route::resources([
     'hero' => HeroController::class,
     'tentangkami' => TentangkamiController::class,
     'showcase' => ShowcaseController::class,
+    'kelaskafekoding' => KelaskafekodingController::class,
 
 ]);
