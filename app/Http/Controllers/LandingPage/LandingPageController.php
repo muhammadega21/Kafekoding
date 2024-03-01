@@ -14,8 +14,10 @@ class LandingPageController extends Controller
     public function index()
     {
         $data['heroCount'] = DB::table('tb_hero')->where('status_hero', 'aktif')->count();
+        $data['tentangkamiCount'] = DB::table('tb_tentangkami')->where('status_tentangkami', 'aktif')->count();
 
         $data['hero'] = DB::table('tb_hero')->where('status_hero', 'aktif')->first();
+        $data['tentangkami'] = DB::table('tb_tentangkami')->where('status_tentangkami', 'aktif')->first();
 
         // dd($data['hero']);
         return view('Layouts_LandingPage.layout', $data);

@@ -121,7 +121,7 @@
           <li class="relative px-6 py-3">
             <a
               class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-white dark:hover:text-white text-white"
-              href="cards.html"
+              href="{{route('tentangkami.index')}}"
             >
               <svg
                 class="w-5 h-5"
