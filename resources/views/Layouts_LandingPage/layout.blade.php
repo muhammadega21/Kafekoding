@@ -757,7 +757,7 @@
                       <p
                         class="mb-3 font-light text-[10px] text-gray-700 dark:text-gray-400"
                       >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        Lorem ipsum dolor, sit amet consectetur adipisicmmmm
                         elit. Necessitatibus a unde aperiam eius libero amet
                         asperiores voluptas .
                       </p>
