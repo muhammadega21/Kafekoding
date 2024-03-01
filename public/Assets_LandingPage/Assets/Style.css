@@ -1,0 +1,18 @@
+.nav-link {
+    margin-right: 9px;
+    display: block;
+}
+.nav-link:hover::after {
+    content: "";
+    display: block;
+    position: relative;
+    border-bottom: 3px solid #f4c247;
+    width: 50% !important;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.custom-background {
+    background-image: url('{{ asset("Assets_LandingPage/./Assets/Image/bakcground.png") }}');
+}

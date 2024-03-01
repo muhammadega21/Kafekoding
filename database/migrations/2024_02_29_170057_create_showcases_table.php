@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->string('id_users')->primary()->unique();
-            $table->string('nama_users');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->string('gambar_users')->nullable();
+        Schema::create('tb_showcase', function (Blueprint $table) {
+            $table->string('id_showcase')->primary()->unique();
+            $table->text('deskripsi_showcase');
+            $table->string('bidang_showcase');
+            $table->string('link_showcase');
+            $table->string('gambar_showcase');
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('tb_showcase');
     }
 };
