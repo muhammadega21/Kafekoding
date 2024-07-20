@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting</title>
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!-- boxicon -->
+    <link rel="stylesheet" href="icons/css/main.css" />
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <!-- cdn jquery -->
+    <script src="/public/js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body
+    class="grid-cols-[65px_calc(100%-65px)] sm:grid-cols-[225px_calc(100%-225px)]"
+  >
+    <!-- Navbar -->
+    <nav class="w-[calc(100%-65px)] sm:w-[calc(100%-225px)]">
+      <div class="left">
+        <i class="icon-chevron-left"></i>
+        <h1>Setting - General</h1>
+      </div>
+      <div class="right">
+        <div class="add">
+          <a href="#"><i class="icon-plus"></i>Kelas</a>
+        </div>
+        <div class="notif">
+          <a href="#"><i class="icon-bell"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div class="sidebar w-[65px] sm:w-[225px]">
+      <div class="brand">
+        <div class="img">
+          <img src="img/logo.png" alt="Kafekoding" />
+        </div>
+        <h1 class="hidden sm:block">Kafe Koding</h1>
+      </div>
+      <div class="side-list">
+        <ul>
+          <li class="profile">
+            <div class="img">
+              <img src="img/profile.png" alt="profile" />
+            </div>
+            <span>Rila Triani</span>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="icon-home"></i>
+              <spnan>Dashboard</spnan>
+            </a>
+          </li>
+          <li class="side-class">
+            <a class="sideClass-link">
+              <i class="icon-class"></i>
+              <span>Kelas Saya</span>
+              <i class="icon-chevron-right chevron"></i>
+            </a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="kelas.html">UI/UX Design</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Database</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="absen.html">
+              <i class="icon-absen"></i>
+              <span>Absen</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting-general.html" class="active">
+              <i class="icon-setting"></i>
+              <span>Setting</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar -->
+
+    <!-- Content -->
+    <main class="w-[calc(100%-65px)] sm:w-[calc(100%-225px)]">
+      <div class="content-wrapper">
+        <div class="content">
+          <div class="setting sett-general">
+            <div class="setting-head">
+              <div class="img">
+                <img src="img/profile.png" alt="profile" />
+              </div>
+              <div class="setting-hero">
+                <h1>Rila Triani</h1>
+                <p>Perbarui nama pengguna Anda dan kelola akun Anda!</p>
+              </div>
+            </div>
+            <div class="setting-body">
+              <div class="setting-side">
+                <ul>
+                  <li>
+                    <a href="setting-general.html" class="active">General</a>
+                  </li>
+                  <li><a href="setting-editProfile.html">Edit Profile</a></li>
+                  <li><a href="setting-password.html">Password</a></li>
+                </ul>
+              </div>
+              <div class="setting-form">
+                <form action="">
+                  <div class="form-input">
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      placeholder="Ketik username kamu disini!"
+                    />
+                  </div>
+                  <div class="form-input">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Ketik email kamu disini!"
+                    />
+                  </div>
+                  <div class="form-input">
+                    <label for="noHp">No. Handphone/WA</label>
+                    <input
+                      type="number"
+                      name="noHp"
+                      id="noHp"
+                      placeholder="Ketik no. handphone kamu disini!"
+                    />
+                  </div>
+                  <div class="btn">
+                    <button>Simpan</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Content -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

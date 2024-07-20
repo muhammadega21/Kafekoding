@@ -1,0 +1,170 @@
+/* Title */
+main .content .title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+/* Title */
+
+/* Progress */
+.progress-box {
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.progress-box .progress-class p,
+.progress-box .progress-score p {
+  font-size: 18px;
+  color: #928b8b;
+}
+
+.progress-box .progress-class p span {
+  font-size: 12px;
+}
+
+.progress-box .progress-class h1 {
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.progress-box .progress-score {
+  text-align: center;
+}
+
+.progress-box .btn a {
+  padding: 10px 25px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.progress-box .btn a:hover {
+  opacity: 0.9;
+}
+/* Progress */
+
+/* Form Input */
+.form-group {
+  display: flex;
+  gap: 50px;
+}
+
+.form-group .form-input {
+  margin: 10px 0;
+}
+
+.form-group:nth-last-child(2) {
+  margin-bottom: 50px;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.form-input label {
+  width: max-content;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-input input,
+.form-input select,
+.form-input textarea {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid #928b8b;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.form-input select {
+  width: 100%;
+  background: url("data:image/svg+xml,<svg height='15px' width='15px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+    no-repeat;
+  background-position: calc(100% - 0.75rem) center !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  padding-right: 2rem !important;
+}
+
+.form-input input:focus,
+.form-input select:focus,
+.form-input textarea:focus {
+  border: 1px solid #5d6cf3;
+}
+
+.form-input .checkbox {
+  position: relative;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.form-input .checkbox .check-for {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-input .check:nth-child(2) .check-for {
+  left: 60px;
+}
+
+.form-input .check input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.form-input .check .checked {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  margin-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background: #fff;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+}
+
+.form-input .check:nth-child(2) .checked {
+  margin-left: 30px;
+}
+
+.form-input .check input:checked ~ .checked::after {
+  content: "";
+  position: absolute;
+  inset: 10%;
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  background-color: var(--primary);
+}
+
+/* Form Input */

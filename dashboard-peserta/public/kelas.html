@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelas</title>
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!-- boxicon -->
+    <link rel="stylesheet" href="icons/css/main.css" />
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <!-- cdn jquery -->
+    <script src="/public/js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body
+    class="grid-cols-[65px_calc(100%-65px)] sm:grid-cols-[225px_calc(100%-225px)]"
+  >
+    <!-- Navbar -->
+    <nav class="w-[calc(100%-65px)] sm:w-[calc(100%-225px)]">
+      <div class="left">
+        <i class="icon-chevron-left"></i>
+        <h1>Class - UI/UX Design</h1>
+      </div>
+      <div class="right">
+        <div class="add">
+          <a href="#"><i class="icon-plus"></i>Kelas</a>
+        </div>
+        <div class="notif">
+          <a href="#"><i class="icon-bell"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div class="sidebar w-[65px] sm:w-[225px]">
+      <div class="brand">
+        <div class="img">
+          <img src="img/logo.png" alt="Kafekoding" />
+        </div>
+        <h1 class="hidden sm:block">Kafe Koding</h1>
+      </div>
+      <div class="side-list">
+        <ul>
+          <li class="profile">
+            <div class="img">
+              <img src="img/profile.png" alt="profile" />
+            </div>
+            <span>Rila Triani</span>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="icon-home"></i>
+              <spnan>Dashboard</spnan>
+            </a>
+          </li>
+          <li class="side-class active">
+            <a class="sideClass-link active">
+              <i class="icon-class"></i>
+              <span>Kelas Saya</span>
+              <i class="icon-chevron-right chevron"></i>
+            </a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="kelas.html" class="active">UI/UX Design</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Database</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="absen.html">
+              <i class="icon-absen"></i>
+              <span>Absen</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting-general.html">
+              <i class="icon-setting"></i>
+              <span>Setting</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar -->
+
+    <!-- Content -->
+    <main class="w-[calc(100%-65px)] sm:w-[calc(100%-225px)]">
+      <div class="content-wrapper">
+        <div class="content">
+          <!-- Module -->
+          <div class="module-wrapper">
+            <div class="title">
+              <h1>Module</h1>
+            </div>
+            <div class="module">
+              <div class="module-list">
+                <p>Minggu 1</p>
+                <p>Introduction UI/UX</p>
+                <div class="action">
+                  <a href="#"><i class="icon-download"></i></a>
+                  <a href="#">Buka</a>
+                </div>
+              </div>
+              <div class="module-list">
+                <p>Minggu 2</p>
+                <p>Research Plan</p>
+                <div class="action">
+                  <a href="#"><i class="icon-download"></i></a>
+                  <a href="#">Buka</a>
+                </div>
+              </div>
+              <div class="module-list">
+                <p>Minggu 3</p>
+                <p>Introduction to Figma</p>
+                <div class="action">
+                  <a href="#"><i class="icon-download"></i></a>
+                  <a href="#">Buka</a>
+                </div>
+              </div>
+              <div class="module-list">
+                <p>Minggu 4</p>
+                <p>Design Thinking</p>
+                <div class="action">
+                  <a href="#"><i class="icon-download"></i></a>
+                  <a href="#">Buka</a>
+                </div>
+              </div>
+              <div class="module-list">
+                <p>Minggu 5</p>
+                <p>Design System</p>
+                <div class="action">
+                  <a href="#"><i class="icon-download"></i></a>
+                  <a href="#">Buka</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Module -->
+
+          <!-- Schedule -->
+          <div class="schedule">
+            <table>
+              <tr>
+                <th>Waktu</th>
+                <th>:</th>
+                <td>13.00 - 15.00 WIB</td>
+              </tr>
+              <tr>
+                <th>Ruangan</th>
+                <th>:</th>
+                <td>102</td>
+              </tr>
+              <tr>
+                <th>Lokasi</th>
+                <th>:</th>
+                <td>Universitas Metamedia</td>
+              </tr>
+            </table>
+            <p>Silahkan Masuk ke group di bawah ini</p>
+            <p>untuk informasi lebih lanjut</p>
+            <div class="btn">
+              <button>
+                <i class="icon-group text-[22px] flex"></i>Gabung Group Sekarang
+              </button>
+            </div>
+          </div>
+          <!-- Schedule -->
+
+          <!-- Assigment -->
+
+          <div class="class-assigment">
+            <div class="title">My Assigment</div>
+            <div class="assigmentList-wrapper">
+              <div class="assigment-list">
+                <div class="progress">
+                  <div class="progress-class">
+                    <h1>[Assigment 5]-Testing</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Explicabo, fuga?
+                    </p>
+                  </div>
+                  <div class="progress-score">
+                    <h1>0/100</h1>
+                  </div>
+                  <div class="action">
+                    <div class="btn">
+                      <i class="icon-chevron-bottom"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-file">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    soluta doloremque impedit quibusdam magnam eum maiores. Amet
+                    accusantium harum libero maiores fugit eos vero. Ullam,
+                    nesciunt impedit magni qu
+                  </p>
+                  <div class="task-action">
+                    <div class="btn">
+                      <button>Simpan</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="assigment-list">
+                <div class="progress">
+                  <div class="progress-class">
+                    <h1>[Assigment 4]-Prototype</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Explicabo, fuga?
+                    </p>
+                  </div>
+                  <div class="progress-score">
+                    <h1>95/100</h1>
+                  </div>
+                  <div class="action">
+                    <div class="btn">
+                      <button>Simpan</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-file complete">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    soluta doloremque impedit quibusdam magnam eum maiores. Amet
+                    accusantium harum libero maiores fugit eos vero. Ullam,
+                    nesciunt impedit magni qui laboriosam nihil laborum
+                    voluptatibus aliquam enim, atque itaque vel unde! Voluptatum
+                    a autem sapiente ratione. Maiores voluptatem quaerat maxime
+                    possimus eaque?
+                  </p>
+                  <div class="task-action">
+                    <div class="file">
+                      <div class="img">
+                        <img src="img/pdf.png" alt="pdf" />
+                      </div>
+                      <span>[Assigment 4] - Prototype</span>
+                    </div>
+                    <div class="btn">
+                      <button>selesai</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="assigment-list">
+                <div class="progress">
+                  <div class="progress-class">
+                    <h1>[Assigment 3]-Prototype</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Explicabo, fuga?
+                    </p>
+                  </div>
+                  <div class="progress-score">
+                    <h1>95/100</h1>
+                  </div>
+                  <div class="action">
+                    <div class="btn">
+                      <button>Simpan</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-file complete">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    soluta doloremque impedit quibusdam magnam eum maiores. Amet
+                    accusantium harum libero maiores fugit eos vero. Ullam,
+                    nesciunt impedit magni qui laboriosam nihil laborum
+                    voluptatibus aliquam enim, atque itaque vel unde! Voluptatum
+                    a autem sapiente ratione. Maiores voluptatem quaerat maxime
+                    possimus eaque?
+                  </p>
+                  <div class="task-action">
+                    <div class="file">
+                      <div class="img">
+                        <img src="img/pdf.png" alt="pdf" />
+                      </div>
+                      <span>[Assigment 3] - Prototype</span>
+                    </div>
+                    <div class="btn">
+                      <button>selesai</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="assigment-list">
+                <div class="progress">
+                  <div class="progress-class">
+                    <h1>[Assigment 2]-Prototype</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Explicabo, fuga?
+                    </p>
+                  </div>
+                  <div class="progress-score">
+                    <h1>95/100</h1>
+                  </div>
+                  <div class="action">
+                    <div class="btn">
+                      <button>Simpan</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-file complete">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    soluta doloremque impedit quibusdam magnam eum maiores. Amet
+                    accusantium harum libero maiores fugit eos vero. Ullam,
+                    nesciunt impedit magni qui laboriosam nihil laborum
+                    voluptatibus aliquam enim, atque itaque vel unde! Voluptatum
+                    a autem sapiente ratione. Maiores voluptatem quaerat maxime
+                    possimus eaque?
+                  </p>
+                  <div class="task-action">
+                    <div class="file">
+                      <div class="img">
+                        <img src="img/pdf.png" alt="pdf" />
+                      </div>
+                      <span>[Assigment 2] - Prototype</span>
+                    </div>
+                    <div class="btn">
+                      <button>selesai</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="assigment-list">
+                <div class="progress">
+                  <div class="progress-class">
+                    <h1>[Assigment 1]-Prototype</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Explicabo, fuga?
+                    </p>
+                  </div>
+                  <div class="progress-score">
+                    <h1>95/100</h1>
+                  </div>
+                  <div class="action">
+                    <div class="btn">
+                      <button>Simpan</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-file complete">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    soluta doloremque impedit quibusdam magnam eum maiores. Amet
+                    accusantium harum libero maiores fugit eos vero. Ullam,
+                    nesciunt impedit magni qui laboriosam nihil laborum
+                    voluptatibus aliquam enim, atque itaque vel unde! Voluptatum
+                    a autem sapiente ratione. Maiores voluptatem quaerat maxime
+                    possimus eaque?
+                  </p>
+                  <div class="task-action">
+                    <div class="file">
+                      <div class="img">
+                        <img src="img/pdf.png" alt="pdf" />
+                      </div>
+                      <span>[Assigment 1] - Prototype</span>
+                    </div>
+                    <div class="btn">
+                      <button>selesai</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Assigment -->
+        </div>
+      </div>
+    </main>
+    <!-- Content -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

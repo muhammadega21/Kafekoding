@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absen</title>
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!-- boxicon -->
+    <link rel="stylesheet" href="icons/css/main.css" />
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <!-- cdn jquery -->
+    <script src="/public/js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body
+    class="grid-cols-[65px_calc(100%-65px)] sm:grid-cols-[225px_calc(100%-225px)]"
+  >
+    <!-- Navbar -->
+    <nav class="w-[calc(100%-65px)] sm:w-[calc(100%-225px)]">
+      <div class="left">
+        <i class="icon-chevron-left"></i>
+        <h1>My Absence - UI/UX Design</h1>
+      </div>
+      <div class="right">
+        <div class="add">
+          <a href="#"><i class="icon-plus"></i>Kelas</a>
+        </div>
+        <div class="notif">
+          <a href="#"><i class="icon-bell"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div class="sidebar w-[65px] sm:w-[225px]">
+      <div class="brand">
+        <div class="img">
+          <img src="img/logo.png" alt="Kafekoding" />
+        </div>
+        <h1 class="hidden sm:block">Kafe Koding</h1>
+      </div>
+      <div class="side-list">
+        <ul>
+          <li class="profile">
+            <div class="img">
+              <img src="img/profile.png" alt="profile" />
+            </div>
+            <span>Rila Triani</span>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="icon-home"></i>
+              <spnan>Dashboard</spnan>
+            </a>
+          </li>
+          <li class="side-class">
+            <a class="sideClass-link">
+              <i class="icon-class"></i>
+              <span>Kelas Saya</span>
+              <i class="icon-chevron-right chevron"></i>
+            </a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="kelas.html">UI/UX Design</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Database</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="absen.html" class="active">
+              <i class="icon-absen"></i>
+              <span>Absen</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting-general.html">
+              <i class="icon-setting"></i>
+              <span>Setting</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar -->
+
+    <!-- Content -->
+    <main class="w-[calc(100%-65px)] sm:w-[calc(100%-225px)]">
+      <div class="content-wrapper">
+        <div class="content">
+          <div class="absence">
+            <div class="absen">
+              <div class="absen-head">
+                <h1>UI/UX Design</h1>
+                <div class="absen-list">
+                  <h1>Hadir</h1>
+                  <h1>Izin</h1>
+                  <h1>Absen</h1>
+                </div>
+              </div>
+              <div class="absen-body">
+                <div class="absen-week-list">
+                  <p>Minggu 14</p>
+                  <div class="absen-list">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box active"></div>
+                  </div>
+                </div>
+                <div class="absen-week-list">
+                  <p>Minggu 3</p>
+                  <div class="absen-list">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box active"></div>
+                  </div>
+                </div>
+                <div class="absen-week-list">
+                  <p>Minggu 2</p>
+                  <div class="absen-list">
+                    <div class="box active"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                  </div>
+                </div>
+                <div class="absen-week-list">
+                  <p>Minggu 1</p>
+                  <div class="absen-list">
+                    <div class="box"></div>
+                    <div class="box active"></div>
+                    <div class="box"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="absen-total">
+                <h1>Total</h1>
+                <div class="absen-list">
+                  <h1>1</h1>
+                  <h1>1</h1>
+                  <h1>2</h1>
+                </div>
+              </div>
+            </div>
+            <div class="absen-alert">
+              <h1>PERINGATAN !!!</h1>
+              <p>
+                Absen tidak boleh lebih dari 4 kali jika melewati batas maka
+                dianggap gugur
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Content -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
